@@ -1,0 +1,23 @@
+{
+    "semi": true,
+    "singleQuote": false,
+    "tabWidth": 2,
+    "printWidth": 80,
+    "trailingComma": "es5",
+    "plugins": [
+        "prettier-plugin-tailwindcss"
+    ],
+    "bracketSpacing": true,
+    "bracketSameLine": true,
+    "importOrder": [
+        "^((@?.*react)|([^@|^.])).*$",
+        "^.*$",
+        "^@/(pages|templates|assets|components).*$",
+        "^@/(lib|utils).*$",
+        "^@/models.*$",
+        "^@/hooks.*$",
+        "^@/(api|data).*$"
+    ],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true
+}
