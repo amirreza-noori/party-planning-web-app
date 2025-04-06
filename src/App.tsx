@@ -1,6 +1,9 @@
 import {
   AnniversaryIcon,
   BirthDayIcon,
+  BudgetIcon,
+  CalendarIcon,
+  ClockIcon,
   DinnerIcon,
   MeetUpIcon,
   OtherIcon,
@@ -20,6 +23,9 @@ function App() {
       <PopulationBigIcon />
       <PopulationMediumIcon />
       <PopulationSmallIcon />
+      <BudgetIcon />
+      <CalendarIcon />
+      <ClockIcon />
     </div>
   );
 }

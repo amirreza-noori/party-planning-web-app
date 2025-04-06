@@ -1,5 +1,8 @@
 export { default as AnniversaryIcon } from "./anniversary.svg?react";
 export { default as BirthDayIcon } from "./birthday.svg?react";
+export { default as BudgetIcon } from "./budget.svg?react";
+export { default as CalendarIcon } from "./calendar.svg?react";
+export { default as ClockIcon } from "./clock.svg?react";
 export { default as DinnerIcon } from "./dinner.svg?react";
 export { default as MeetUpIcon } from "./meetUp.svg?react";
 export { default as OtherIcon } from "./other.svg?react";
