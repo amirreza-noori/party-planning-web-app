@@ -1,0 +1,23 @@
+{
+    "create.new.event": "Create a New Event",
+    "what.occasion": "What is the occasion?",
+    "what.size": "What is the size of the guest list?",
+    "occasion.type": {
+        "0": "Birthday",
+        "1": "Anniversary",
+        "2": "Dinner",
+        "3": "Meet up",
+        "4": "Other"
+    },
+    "occasion.size": {
+        "0": "Small",
+        "1": "Medium",
+        "2": "Large"
+    },
+    "occasion.sizeDescription": {
+        "0": "(4-20 guests)",
+        "1": "(20-60 guests)",
+        "2": "(60+ guests)"
+    },
+    "next": "Next"
+}

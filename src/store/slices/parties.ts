@@ -5,11 +5,13 @@ import type { PayloadAction } from "@reduxjs/toolkit";
 export interface PartiesState {
   list: Party[];
   draft: Partial<Party>;
+  draftStep: number;
 }
 
 const initialState: PartiesState = {
   list: [],
   draft: {},
+  draftStep: -1,
 };
 
 export const partiesSlice = createSlice({
@@ -22,13 +24,17 @@ export const partiesSlice = createSlice({
         ...action.payload,
       };
     },
+    setDraftStep: (state, action: PayloadAction<number>) => {
+      if (action.payload > state.draftStep) state.draftStep = action.payload;
+    },
     add: (state, action: PayloadAction<Party>) => {
+      state.draftStep = -1;
+      state.draft = {};
       state.list.push(action.payload);
     },
   },
 });
 
-// Action creators are generated for each case reducer function
-export const { saveDraft, add } = partiesSlice.actions;
+export const { saveDraft, setDraftStep, add } = partiesSlice.actions;
 
 export default partiesSlice.reducer;

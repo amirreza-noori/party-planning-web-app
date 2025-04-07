@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export type LayoutProps = {
+export type MainLayoutProps = {
   children: ReactNode;
   header?: ReactNode;
   footer?: ReactNode;

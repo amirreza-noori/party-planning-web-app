@@ -1,2 +1,2 @@
-export type * from "./party";
-export type * from "./task";
+export * from "./party";
+export * from "./task";
