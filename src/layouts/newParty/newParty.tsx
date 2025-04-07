@@ -19,7 +19,7 @@ export default function NewPartyLayout({
       header={
         <>
           <Header title={title ? title : t("create.new.event")} backButton />
-          <Progress value={step + 1} max={6} />
+          <Progress value={step + 1} max={8} />
         </>
       }
       footer={

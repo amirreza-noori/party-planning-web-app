@@ -1,3 +1,5 @@
+import { Task } from "./task";
+
 export enum PartyOccasion {
   birthday,
   anniversary,
@@ -17,4 +19,9 @@ export type Party = {
   name: string;
   timeStamp: number;
   budget: number;
+  surveyEInvite: number;
+  surveyFood: number;
+  surveyAlcohol: number;
+  surveyDecorator: number;
+  surveyGame: number;
 };

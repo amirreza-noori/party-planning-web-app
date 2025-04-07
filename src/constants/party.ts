@@ -9,18 +9,18 @@ import {
 } from "@/assets/icons";
 import { ButtonProps } from "@/components/types";
 
-type OccasionButton = { icon: ComponentType; color: ButtonProps["color"] };
+type ButtonIconInfo = { icon: ComponentType; color: ButtonProps["color"] };
 
-export const occasionTypeIcons = [
+export const partyTypeIcons = [
   { icon: BirthDayIcon, color: "violet" },
   { icon: AnniversaryIcon, color: "red" },
   { icon: DinnerIcon, color: "lime" },
   { icon: MeetUpIcon, color: "blue" },
   { icon: OtherIcon, color: "yellow" },
-] satisfies OccasionButton[];
+] satisfies ButtonIconInfo[];
 
-export const occasionSizeIcons = [
+export const partySizeIcons = [
   { icon: BirthDayIcon, color: "violet" },
   { icon: AnniversaryIcon, color: "red" },
   { icon: DinnerIcon, color: "lime" },
-] satisfies OccasionButton[];
+] satisfies ButtonIconInfo[];

@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 import { BudgetIcon, CalendarIcon, ClockIcon } from "@/assets/icons";
 import { Button, Input } from "@/components";
-import { occasionSizeIcons } from "@/constants";
+import { partySizeIcons } from "@/constants";
 import { usePartyDraft } from "@/hooks";
 import { NewPartyLayout } from "@/layouts";
 import { Party, PartySize } from "@/types";

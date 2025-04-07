@@ -1,1 +1,1 @@
-export * from "./occasions";
+export * from "./party";

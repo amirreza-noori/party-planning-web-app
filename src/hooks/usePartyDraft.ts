@@ -16,6 +16,10 @@ export const usePartyDraft = (step: number) => {
     routes.new.size,
     routes.new.data,
     routes.new.invite,
+    routes.new.food,
+    routes.new.alcohol,
+    routes.new.decorator,
+    routes.new.game,
   ];
 
   // if (draftStep < step) navigate(stepRoutes[draftStep + 1]);
