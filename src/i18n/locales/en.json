@@ -19,5 +19,15 @@
         "1": "(20-60 guests)",
         "2": "(60+ guests)"
     },
+    "event.name": "Event Name",
+    "event.name.error": "Event Name is Required",
+    "date": "Date",
+    "date.placeholder": "DD-MM-YYYY",
+    "date.error": "Wrong Date Format",
+    "time": "Time",
+    "time.placeholder": "HH:MM",
+    "time.error": "Wrong Time Format",
+    "budget": "Budget",
+    "budget.error": "Budget is Required",
     "next": "Next"
 }

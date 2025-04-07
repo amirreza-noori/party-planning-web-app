@@ -10,4 +10,5 @@ export type ButtonProps = {
   selected?: boolean;
   disabled?: boolean;
   onClick?: VoidFunction;
+  type?: "button" | "submit" | "reset";
 };

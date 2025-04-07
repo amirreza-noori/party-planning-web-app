@@ -6,5 +6,5 @@ export type NewPartyLayoutProps = {
   children: ReactNode;
   actionTitle?: string;
   actionDisabled?: boolean;
-  onAction?: VoidFunction;
+  onAction?: (data: object) => void | Promise<void>;
 };

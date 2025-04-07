@@ -1,6 +1,9 @@
+import { persistReducer } from "redux-persist";
+import storage from "redux-persist/lib/storage";
+
 import { Party } from "@/types";
-import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 export interface PartiesState {
   list: Party[];
@@ -37,4 +40,7 @@ export const partiesSlice = createSlice({
 
 export const { saveDraft, setDraftStep, add } = partiesSlice.actions;
 
-export default partiesSlice.reducer;
+export default persistReducer(
+  { key: "parties", storage },
+  partiesSlice.reducer
+);

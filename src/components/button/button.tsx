@@ -12,9 +12,11 @@ export default function Button({
   selected,
   disabled,
   onClick,
+  type = "button",
 }: ButtonProps) {
   return (
     <button
+      type={type}
       onClick={onClick}
       className={cn(
         "text-text flex grow cursor-pointer flex-col items-center justify-center gap-2 rounded-md border border-solid border-transparent px-4 py-3 text-sm font-bold transition-all",

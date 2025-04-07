@@ -15,6 +15,6 @@ export type Party = {
   type: PartyOccasion;
   size: PartySize;
   name: string;
-  time: Date;
+  timeStamp: number;
   budget: number;
 };

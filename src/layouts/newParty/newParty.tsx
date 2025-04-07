@@ -13,6 +13,7 @@ export default function NewPartyLayout({
   step,
 }: NewPartyLayoutProps) {
   const { t } = useTranslation();
+
   return (
     <MainLayout
       header={
@@ -23,11 +24,13 @@ export default function NewPartyLayout({
       }
       footer={
         <Button
+          type="submit"
           title={actionTitle ? actionTitle : t("next")}
           disabled={actionDisabled}
-          onClick={onAction}
         />
-      }>
+      }
+      form
+      onSubmit={actionDisabled ? undefined : onAction}>
       {children}
     </MainLayout>
   );
