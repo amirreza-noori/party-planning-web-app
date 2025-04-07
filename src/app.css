@@ -17,5 +17,5 @@ h1 {
 }
 
 h2 {
-  @apply py-4 text-base font-bold;
+  @apply !py-4 text-base font-bold;
 }
