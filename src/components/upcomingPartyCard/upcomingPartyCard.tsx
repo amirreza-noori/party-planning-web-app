@@ -1,9 +1,9 @@
 import Button from "../button/button";
-import { UpcomingEventCardProps } from "./types";
+import { UpcomingPartyCardProps } from "./types";
 import notepadDoneUrl from "@/assets/images/notepad-done.png";
 import notepadUrl from "@/assets/images/notepad.png";
 
-export default function UpcomingEventCard({ event }: UpcomingEventCardProps) {
+export default function UpcomingPartyCard({ event }: UpcomingPartyCardProps) {
   return (
     <div className="relative grid min-h-32 w-full justify-start rounded-md bg-amber-300 bg-linear-to-br from-[#50586A] to-[#1E2530] py-4 ps-5 pe-36">
       <img
