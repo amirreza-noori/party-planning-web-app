@@ -1,3 +1,4 @@
+import { Button } from "./components";
 import {
   AnniversaryIcon,
   BirthDayIcon,
@@ -26,6 +27,15 @@ function App() {
       <BudgetIcon />
       <CalendarIcon />
       <ClockIcon />
+      <Button title="next" />
+      <Button title="next" variant="secondary" icon={<BirthDayIcon />} />
+      <Button
+        title="next"
+        variant="secondary"
+        icon={<BirthDayIcon />}
+        description="Test"
+        align="start"
+      />
     </div>
   );
 }

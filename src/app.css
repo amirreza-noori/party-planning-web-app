@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-body: #090909;
+  --color-text: #ffffff;
+  --color-primary: #76a9ff;
+  --color-secondary: #1c1c1c;
+  --font-primary: "Montserrat", sans-serif;
+}
+
+body {
+  @apply bg-body font-primary text-text;
+}

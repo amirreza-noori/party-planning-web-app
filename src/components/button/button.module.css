@@ -1,0 +1,37 @@
+@import "../../app.css";
+
+/* variant prop */
+.variant_primary {
+  @apply bg-primary uppercase;
+}
+.variant_secondary {
+  @apply bg-secondary;
+}
+
+/* align prop */
+.align_start {
+  @apply items-start;
+}
+.align_center {
+  @apply items-center;
+}
+.align_end {
+  @apply items-end;
+}
+
+/* color prop */
+.color_violet {
+  --button-color: #d898ff;
+}
+.color_red {
+  --button-color: #ff9a98;
+}
+.color_lime {
+  --button-color: #98ff9c;
+}
+.color_blue {
+  --button-color: #76a9ff;
+}
+.color_yellow {
+  --button-color: #ffed9b;
+}
