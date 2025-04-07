@@ -1,4 +1,4 @@
-import styles from "./button.module.css";
+import styles from "./prop.module.css";
 import { ButtonProps } from "./types";
 import { cn } from "@/utils";
 
