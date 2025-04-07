@@ -8,4 +8,6 @@ export type ButtonProps = {
   align?: "start" | "end" | "center";
   color?: "violet" | "red" | "lime" | "blue" | "yellow";
   selected?: boolean;
+  disabled?: boolean;
+  onClick?: VoidFunction;
 };
