@@ -52,5 +52,6 @@
     "yes": "Yes",
     "no": "No",
     "checklist": "Checklist",
-    "": ""
+    "page.not.found": "Page Not Found",
+    "next": "Next"
 }

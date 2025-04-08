@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router";
 
+import NotFoundPage from "./notFound";
 import { CheckCard, Header } from "@/components";
 import { MainLayout } from "@/layouts";
 import { toggleDoneById } from "@/store/slices/parties";
@@ -17,7 +18,7 @@ export default function PartyPage() {
   const dispatch = useAppDispatch();
 
   if (!party) {
-    return <>Notfound</>;
+    return <NotFoundPage />;
   }
 
   const daysRemained = getRemainedDays(party.timeStamp);

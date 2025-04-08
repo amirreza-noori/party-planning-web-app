@@ -22,7 +22,8 @@ export const usePartyDraft = (step: number) => {
     routes.new.game,
   ];
 
-  if (draftStep < step) navigate(routes.home);
+  if (0 <= draftStep && draftStep < step)
+    setTimeout(() => navigate(routes.home), 200);
 
   const handleNext = () => {
     const nextStep = step + 1;

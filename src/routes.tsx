@@ -9,6 +9,7 @@ import GamePage from "./pages/new/game";
 import InvitePage from "./pages/new/invite";
 import OccasionPage from "./pages/new/occasion";
 import SizePage from "./pages/new/size";
+import NotFoundPage from "./pages/notFound";
 import PartyPage from "./pages/party";
 
 export const routes = {
@@ -71,5 +72,9 @@ export const router = createBrowserRouter([
   {
     path: routes.party + ":id",
     Component: PartyPage,
+  },
+  {
+    path: "*",
+    Component: NotFoundPage,
   },
 ]);

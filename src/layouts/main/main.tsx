@@ -17,7 +17,7 @@ const MainLayout = memo(
       <Component
         className="mx-auto flex min-h-screen max-w-[560px] flex-col px-4 py-6"
         onSubmit={handleSubmit}>
-        {!!header && <div className="grid">{header}</div>}
+        {!!header && <div className="mb-2 grid">{header}</div>}
         <div className="grow">{children}</div>
         {!!footer && <div className="grid gap-2">{footer}</div>}
       </Component>
