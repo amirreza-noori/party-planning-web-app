@@ -2,15 +2,14 @@ import { useTranslation } from "react-i18next";
 
 import { UpcomingPartyCardProps } from "./types";
 import notepadUrl from "@/assets/images/notepad.png";
+import { getRemainedDays } from "@/utils";
 
 export default function UpcomingPartyCard({
   party,
   onAction,
 }: UpcomingPartyCardProps) {
   const { t } = useTranslation();
-  const daysRemained = Math.ceil(
-    (party.timeStamp - new Date().getTime()) / 3600 / 1000 / 24
-  );
+  const daysRemained = getRemainedDays(party.timeStamp);
 
   const doneCount = party.tasks.reduce(
     (count, task) => (task.done ? count + 1 : count),

@@ -8,11 +8,9 @@ import {
   PreviousParties,
   UpcomingPartyCard,
 } from "@/components";
-import { partyTypeIcons } from "@/constants";
 import { MainLayout } from "@/layouts";
 import { routes } from "@/routes";
 import { useAppSelector } from "@/store/store";
-import { getFormattedDateTime } from "@/utils";
 
 const aDaySeconds = 3600 * 1000 * 24;
 

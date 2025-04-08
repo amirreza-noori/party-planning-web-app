@@ -1,4 +1,5 @@
 export { default as Button } from "./button/button";
+export { default as CheckCard } from "./checkCard/checkCard";
 export { default as Header } from "./header/header";
 export { default as Input } from "./input/input";
 export { default as NoUpcomingPartyCard } from "./noUpcomingPartyCard/noUpcomingPartyCard";

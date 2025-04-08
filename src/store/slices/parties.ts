@@ -30,6 +30,17 @@ export const partiesSlice = createSlice({
     setDraftStep: (state, action: PayloadAction<number>) => {
       if (action.payload > state.draftStep) state.draftStep = action.payload;
     },
+    toggleDoneById: (
+      state,
+      action: PayloadAction<{ partyId: number; taskIndex: number }>
+    ) => {
+      const index = state.list.findIndex(
+        (party) => party.id === action.payload.partyId
+      );
+      const taskIndex = action.payload.taskIndex;
+      state.list[index].tasks[taskIndex].done =
+        !state.list[index].tasks[taskIndex].done;
+    },
     add: (state, action: PayloadAction<Omit<Party, "id">>) => {
       state.draftStep = -1;
       state.draft = {};
@@ -42,7 +53,8 @@ export const partiesSlice = createSlice({
   },
 });
 
-export const { saveDraft, setDraftStep, add } = partiesSlice.actions;
+export const { saveDraft, setDraftStep, toggleDoneById, add } =
+  partiesSlice.actions;
 
 export default persistReducer(
   { key: "parties", storage },

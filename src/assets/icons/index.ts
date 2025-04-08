@@ -10,3 +10,4 @@ export { default as OtherIcon } from "./other.svg?react";
 export { default as PopulationBigIcon } from "./populationBig.svg?react";
 export { default as PopulationMediumIcon } from "./populationMedium.svg?react";
 export { default as PopulationSmallIcon } from "./populationSmall.svg?react";
+export { default as TickIcon } from "./tick.svg?react";
