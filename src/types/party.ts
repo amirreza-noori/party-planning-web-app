@@ -24,4 +24,5 @@ export type Party = {
   surveyAlcohol: number;
   surveyDecorator: number;
   surveyGame: number;
+  tasks: Task[];
 };

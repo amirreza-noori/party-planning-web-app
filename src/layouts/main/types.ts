@@ -4,7 +4,6 @@ export type MainLayoutProps = {
   children: ReactNode;
   header?: ReactNode;
   footer?: ReactNode;
-} & (
-  | { form?: false; onSubmit: undefined }
-  | { form: true; onSubmit?: (data: object) => void | Promise<void> }
-);
+  form?: boolean;
+  onSubmit?: (data: object) => void | Promise<void>;
+};
