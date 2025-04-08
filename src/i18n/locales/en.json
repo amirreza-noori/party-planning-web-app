@@ -1,4 +1,11 @@
 {
+    "create.new": "Create New",
+    "upcoming": "Upcoming",
+    "today": "Today",
+    "remain.days": "Days to go",
+    "done": "Done",
+    "todo": "To Do",
+    "previous.parties": "Previous House Parties",
     "create.new.event": "Create a New Event",
     "what.occasion": "What is the occasion?",
     "what.size": "What is the size of the guest list?",

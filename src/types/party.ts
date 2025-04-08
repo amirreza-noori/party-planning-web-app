@@ -14,6 +14,7 @@ export enum PartySize {
 }
 
 export type Party = {
+  id: number;
   type: PartyOccasion;
   size: PartySize;
   name: string;

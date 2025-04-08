@@ -22,11 +22,12 @@ export const usePartyDraft = (step: number) => {
     routes.new.game,
   ];
 
-  // if (draftStep < step) navigate(stepRoutes[draftStep + 1]);
+  if (draftStep < step) navigate(routes.home);
 
   const handleNext = () => {
-    dispatch(setDraftStep(step));
-    navigate(stepRoutes[step + 1]);
+    const nextStep = step + 1;
+    dispatch(setDraftStep(nextStep));
+    navigate(stepRoutes[nextStep]);
   };
   const setDraft = (data: Partial<Party>) => dispatch(saveDraft(data));
 

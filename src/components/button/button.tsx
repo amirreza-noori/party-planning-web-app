@@ -12,6 +12,7 @@ export default function Button({
   selected,
   disabled,
   onClick,
+  className,
   type = "button",
 }: ButtonProps) {
   return (
@@ -24,7 +25,8 @@ export default function Button({
         styles[`align_${align}`],
         styles[`color_${color}`],
         selected && "border-[var(--button-color)]",
-        disabled && "pointer-events-none cursor-default opacity-50"
+        disabled && "pointer-events-none cursor-default opacity-50",
+        className
       )}>
       {!!icon && <span className="text-[var(--button-color)]">{icon}</span>}
       {title}

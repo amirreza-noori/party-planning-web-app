@@ -7,6 +7,7 @@ import { partySizeIcons } from "@/constants";
 import { usePartyDraft } from "@/hooks";
 import { NewPartyLayout } from "@/layouts";
 import { Party, PartySize } from "@/types";
+import { getFormattedDateTime } from "@/utils";
 
 type FormData = {
   name: string;
@@ -20,10 +21,7 @@ export default function DataPage() {
   const { handleNext, setDraft, draft } = usePartyDraft(2);
 
   const { name, budget } = draft;
-  const timeObject = new Date(draft.timeStamp ?? "");
-  const zPad = (num: number) => num.toString().padStart(2, "0");
-  const time = `${zPad(timeObject.getHours())}:${zPad(timeObject.getMinutes())}`;
-  const date = `${timeObject.getFullYear()}-${zPad(timeObject.getMonth())}-${zPad(timeObject.getDate())}`;
+  const { time, date } = getFormattedDateTime(draft.timeStamp);
 
   const handleSubmit = (data: object) => {
     const { name, time, date, budget } = data as FormData;

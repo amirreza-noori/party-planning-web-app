@@ -24,7 +24,7 @@ export const routes = {
     decorator: "/new/decorator",
     game: "/new/game",
   },
-  party: "/new/party/",
+  party: "/party/",
 };
 
 export const router = createBrowserRouter([

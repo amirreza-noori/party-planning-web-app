@@ -2,8 +2,9 @@ import { useNavigate } from "react-router";
 
 import { HeaderProps } from "./types";
 import { BackIcon } from "@/assets/icons";
+import profileImageUrl from "@/assets/images/profile-default.png";
 
-export default function Header({ title, backButton }: HeaderProps) {
+export default function Header({ title, backButton, profile }: HeaderProps) {
   const navigate = useNavigate();
   const handleBack = () => navigate(-1);
   return (
@@ -14,6 +15,7 @@ export default function Header({ title, backButton }: HeaderProps) {
         </span>
       )}
       <h1 className="!my-2">{title}</h1>
+      {profile && <img className="ms-auto" src={profileImageUrl} />}
     </div>
   );
 }

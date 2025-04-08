@@ -21,7 +21,7 @@ export const partiesSlice = createSlice({
   name: "parties",
   initialState,
   reducers: {
-    saveDraft: (state, action: PayloadAction<Partial<Party>>) => {
+    saveDraft: (state, action: PayloadAction<Partial<Omit<Party, "id">>>) => {
       state.draft = {
         ...state.draft,
         ...action.payload,
@@ -30,10 +30,14 @@ export const partiesSlice = createSlice({
     setDraftStep: (state, action: PayloadAction<number>) => {
       if (action.payload > state.draftStep) state.draftStep = action.payload;
     },
-    add: (state, action: PayloadAction<Party>) => {
+    add: (state, action: PayloadAction<Omit<Party, "id">>) => {
       state.draftStep = -1;
       state.draft = {};
-      state.list.push(action.payload);
+      const biggestId = state.list.reduce(
+        (id, party) => (id < party.id ? party.id : id),
+        1
+      );
+      state.list.push({ ...action.payload, id: biggestId + 1 });
     },
   },
 });

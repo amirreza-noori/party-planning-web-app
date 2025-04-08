@@ -1,4 +1,6 @@
+import { Party } from "@/types";
+
 export type UpcomingPartyCardProps = {
-  event?: any;
+  party: Party;
   onAction?: VoidFunction;
 };
